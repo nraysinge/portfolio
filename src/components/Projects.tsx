@@ -14,9 +14,13 @@ interface Project {
 export function Projects() {
   const [projects, setProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     async function fetchProjects() {
+      if (!supabase) {
+        setProjects([]);
+        setLoading(false);
+        return;
+      }
       try {
         const { data, error } = await supabase
           .from('projects')

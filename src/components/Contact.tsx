@@ -19,6 +19,9 @@ export function Contact() {
     setStatus('idle');
 
     try {
+      if (!supabase) {
+        throw new Error('Form is unavailable in this build. Use email or phone below.');
+      }
       const { error } = await supabase
         .from('contact_messages')
         .insert([formData]);
