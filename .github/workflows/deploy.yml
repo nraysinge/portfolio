@@ -1,4 +1,10 @@
 # Matches https://vitejs.dev/guide/static-deploy.html (GitHub Pages)
+#
+# REQUIRED (one-time): Repo → Settings → Pages → Build and deployment → Source:
+#   select "GitHub Actions" — NOT "Deploy from a branch".
+# If Source is a branch, GitHub serves repo root index.html and /src/*.tsx as raw
+# files; the browser cannot run them → blank white page.
+#
 name: Deploy to GitHub Pages
 
 on:
