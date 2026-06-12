@@ -1,12 +1,363 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>nraysinge</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Narendra Raysinge — Full Stack Java Developer specializing in Java, J2EE, Spring Boot, Hibernate, and SQL." />
+  <title>Narendra Raysinge | Full Stack Java Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">&lt;JavaDev /&gt;</a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#home" class="nav__link active">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#education" class="nav__link">Education</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero section" id="home">
+      <div class="container hero__container">
+        <p class="hero__greeting">Hello, I'm</p>
+        <h1 class="hero__name">Narendra Raysinge</h1>
+        <p class="hero__title">
+          <span class="hero__typed" id="typed-text"></span>
+          <span class="hero__cursor">|</span>
+        </p>
+        <p class="hero__description">
+          Full Stack Java Developer trained at Kiran Academy, Pune. Strong in Core Java,
+          J2EE, Hibernate, Spring Framework, and SQL — building real-world web
+          applications with clean code and solid problem-solving skills.
+        </p>
+        <div class="hero__buttons">
+          <a href="#projects" class="btn btn--primary">View My Projects</a>
+          <a href="#contact" class="btn btn--outline">Hire Me</a>
+        </div>
+        <div class="hero__social">
+          <a href="https://github.com/nraysinge" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.395-.135-.345-.72-1.395-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/nraysinge" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.126 0 2.063 2.063 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:narendraraysinge26@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <a href="#about" aria-label="Scroll down">
+          <span></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="container">
+        <h2 class="section__title">About Me</h2>
+        <div class="about__grid">
+          <div class="about__image">
+            <div class="about__avatar">
+              <span>NR</span>
+            </div>
+          </div>
+          <div class="about__content">
+            <p>
+              I'm a <strong>Full Stack Java Developer</strong> from
+              <strong>Jalgaon, Maharashtra</strong>, currently pursuing hands-on training
+              at <strong>Kiran Academy, Pune</strong>. I have strong knowledge in
+              <strong>Core Java</strong>, <strong>Advanced Java</strong>,
+              <strong>Hibernate</strong>, <strong>Spring Framework</strong>, and
+              <strong>SQL</strong>.
+            </p>
+            <p>
+              Through real-world project work, I've developed strong debugging and
+              problem-solving skills. I enjoy building full-stack web applications with
+              Java and J2EE, and continuously improving my coding efficiency and
+              understanding of enterprise technologies.
+            </p>
+            <ul class="about__info">
+              <li><strong>Name:</strong> Narendra Raysinge</li>
+              <li><strong>Role:</strong> Full Stack Java Developer</li>
+              <li><strong>Email:</strong> narendraraysinge26@gmail.com</li>
+              <li><strong>Phone:</strong> +91 9637634418</li>
+              <li><strong>Location:</strong> Jalgaon, Maharashtra, India</li>
+              <li><strong>Education:</strong> BCA — Adv. S. A. Baheti College, Jalgaon</li>
+              <li><strong>Training:</strong> Kiran Academy, Pune</li>
+              <li><strong>Available:</strong> Open to opportunities</li>
+            </ul>
+            <a href="resume.pdf" class="btn btn--primary" download="Narendra_Raysinge_Resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="education section" id="education">
+      <div class="container">
+        <h2 class="section__title">Education</h2>
+        <p class="section__subtitle">My academic background</p>
+        <div class="timeline">
+          <article class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <div>
+                  <h3>Bachelor of Computer Application (BCA)</h3>
+                  <p class="timeline__org">Adv. S. A. Baheti College, Jalgaon</p>
+                </div>
+                <span class="timeline__date">2022 – 2026</span>
+              </div>
+              <p class="timeline__score">CGPA: <strong>8.03</strong></p>
+            </div>
+          </article>
+
+          <article class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <div>
+                  <h3>Higher Secondary Certificate (HSC)</h3>
+                  <p class="timeline__org">K. U. Kolhe Junior College, Jalgaon</p>
+                </div>
+                <span class="timeline__date">2019 – 2020</span>
+              </div>
+              <p class="timeline__score">Percentage: <strong>52.31%</strong></p>
+            </div>
+          </article>
+
+          <article class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <div>
+                  <h3>Secondary School Certificate (SSC)</h3>
+                  <p class="timeline__org">Adarsh Vidyalaya Kanalda, Jalgaon</p>
+                </div>
+                <span class="timeline__date">2016 – 2017</span>
+              </div>
+              <p class="timeline__score">Percentage: <strong>71.40%</strong></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="experience section" id="experience">
+      <div class="container">
+        <h2 class="section__title">Experience &amp; Training</h2>
+        <p class="section__subtitle">My learning journey and hands-on project experience</p>
+        <div class="timeline">
+          <article class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <div>
+                  <h3>Full Stack Java Development</h3>
+                  <p class="timeline__org">Kiran Academy, Pune</p>
+                </div>
+                <span class="timeline__date">Nov 2025 – Present</span>
+              </div>
+              <p class="timeline__tech">
+                <strong>Technologies:</strong> Java · J2EE · SQL · Hibernate · Spring Framework
+              </p>
+              <ul class="timeline__list">
+                <li>Gained hands-on experience in web development projects using Java and J2EE.</li>
+                <li>Developed strong debugging and problem-solving skills during project execution.</li>
+                <li>Worked on real-world applications, improving coding efficiency and understanding of full-stack technologies.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <h2 class="section__title">Technical Skills</h2>
+        <p class="section__subtitle">Java ecosystem and full-stack technologies I work with</p>
+        <div class="skills__grid">
+          <div class="skill-card">
+            <div class="skill-card__icon">Java</div>
+            <h3>Core &amp; Advanced Java</h3>
+            <p>Java, J2EE, OOP, Collections, Multithreading, JDBC, Servlets, JSP, Exception Handling</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__icon">Spring</div>
+            <h3>Spring Ecosystem</h3>
+            <p>Spring Boot, Spring MVC, Spring Security, Spring Data JPA, REST APIs, Dependency Injection</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__icon">SQL</div>
+            <h3>Database &amp; Hibernate</h3>
+            <p>SQL, MySQL, Hibernate, JPA, JDBC, Query Optimization, Entity Mapping, Transactions</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__icon">Full</div>
+            <h3>Full Stack &amp; Tools</h3>
+            <p>HTML, CSS, JavaScript, Thymeleaf, Maven, Git, GitHub, Postman, IntelliJ IDEA, Eclipse</p>
+          </div>
+        </div>
+
+        <div class="tech-tags">
+          <span>Java</span>
+          <span>J2EE</span>
+          <span>SQL</span>
+          <span>Spring Boot</span>
+          <span>Spring MVC</span>
+          <span>Hibernate</span>
+          <span>JPA</span>
+          <span>MySQL</span>
+          <span>JDBC</span>
+          <span>Maven</span>
+          <span>Git</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <h2 class="section__title">Featured Projects</h2>
+        <p class="section__subtitle">Java &amp; Spring Boot applications I've built</p>
+        <div class="projects__grid">
+          <article class="project-card">
+            <div class="project-card__image project-card__image--1">
+              <div class="project-card__overlay">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="project-card__link">Live Demo</a>
+                <a href="https://github.com/nraysinge" target="_blank" rel="noopener noreferrer" class="project-card__link">GitHub</a>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <h3>Employee Management System</h3>
+              <p>Full-stack CRUD application with role-based access, built using Spring Boot, Hibernate, and MySQL with a responsive frontend.</p>
+              <div class="project-card__tags">
+                <span>Spring Boot</span>
+                <span>Hibernate</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__image project-card__image--2">
+              <div class="project-card__overlay">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="project-card__link">Live Demo</a>
+                <a href="https://github.com/nraysinge" target="_blank" rel="noopener noreferrer" class="project-card__link">GitHub</a>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <h3>E-Commerce REST API</h3>
+              <p>Scalable RESTful backend for product catalog, orders, and user management with Spring Boot, JPA, and secure authentication.</p>
+              <div class="project-card__tags">
+                <span>Spring Boot</span>
+                <span>Spring Security</span>
+                <span>JPA</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__image project-card__image--3">
+              <div class="project-card__overlay">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="project-card__link">Live Demo</a>
+                <a href="https://github.com/nraysinge" target="_blank" rel="noopener noreferrer" class="project-card__link">GitHub</a>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <h3>Banking Management App</h3>
+              <p>Core Java &amp; JDBC based banking system with account management, transactions, and layered architecture using design patterns.</p>
+              <div class="project-card__tags">
+                <span>Core Java</span>
+                <span>JDBC</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <h2 class="section__title">Get In Touch</h2>
+        <p class="section__subtitle">
+          Looking for a Java developer for your next project? Let's connect.
+        </p>
+        <div class="contact__wrapper">
+          <form class="contact__form" id="contact-form">
+            <div class="form__group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form__group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+          </form>
+          <div class="contact__info">
+            <div class="contact__item">
+              <h4>Email</h4>
+              <a href="mailto:narendraraysinge26@gmail.com">narendraraysinge26@gmail.com</a>
+            </div>
+            <div class="contact__item">
+              <h4>Phone</h4>
+              <a href="tel:+919637634418">+91 9637634418</a>
+            </div>
+            <div class="contact__item">
+              <h4>Location</h4>
+              <p>Jalgaon, Maharashtra, India</p>
+            </div>
+            <div class="contact__item">
+              <h4>Training</h4>
+              <p>Kiran Academy, Pune</p>
+            </div>
+            <div class="contact__item">
+              <h4>Social</h4>
+              <div class="contact__social">
+                <a href="https://github.com/nraysinge" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/nraysinge" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <p>&copy; <span id="year"></span> Narendra Raysinge. Full Stack Java Developer.</p>
+      <a href="#home" class="footer__top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
